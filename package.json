@@ -1,0 +1,27 @@
+{
+  "name": "duplicate-file-clean",
+  "version": "1.0.0",
+  "description": "Compare the files in folder1 with those in folder2 and remove duplicate files in folder",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RavelloH/duplicate-file-clean.git"
+  },
+  "keywords": [
+    "duplicate-file-clean"
+  ],
+  "author": "RavelloH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RavelloH/duplicate-file-clean/issues"
+  },
+  "homepage": "https://github.com/RavelloH/duplicate-file-clean#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "readline": "^1.3.0"
+  }
+}
