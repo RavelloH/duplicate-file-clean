@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+
+const { findDuplicateFiles, deleteDuplicateFiles } = require('./main');
+
+const folder1 = process.argv[2];
+const folder2 = process.argv[3];
+
+const duplicates = findDuplicateFiles(folder1, folder2);
+
+if (duplicates.length > 0) {
+  console.log('Found duplicate files:');
+  for (const file of duplicates) {
+    console.log(file);
+  }
+
+  const rl = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
+  });
+
+  rl.question('Do you want to delete the duplicate files? (y/n): ', (answer) => {
+    rl.close();
+    if (answer.toLowerCase() === 'y') {
+      deleteDuplicateFiles(duplicates);
+    } else {
+      console.log('Duplicate files not deleted.');
+    }
+  });
+} else {
+  console.log('No duplicate files found.');
+}

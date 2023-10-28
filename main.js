@@ -68,3 +68,5 @@ if (duplicates.length > 0) {
 } else {
   console.log('No duplicate files found.');
 }
+
+module.exports = { findDuplicateFiles, deleteDuplicateFiles };

@@ -1,6 +1,6 @@
 {
   "name": "duplicate-file-clean",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Compare the files in folder1 with those in folder2 and remove duplicate files in folder",
   "main": "main.js",
   "scripts": {
